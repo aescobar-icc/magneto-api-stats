@@ -10,8 +10,7 @@ RUN apk update \
     && pip install pymysql \
     && pip install mysql-connector 
 
-#ENV SQLALCHEMY_URI=mysql+pymysql://assurance:d3sarr0ll0@magneto-sql-proxy:3306/test_base
-ENV SQLALCHEMY_URI=mysql+pymysql://assurance:d3sarr0ll0@123.123.123.123:3307/test_base
+ENV SQLALCHEMY_URI=mysql+pymysql://assurance:d3sarr0ll0@magneto-sql-proxy:3306/test_base
 
 WORKDIR /app-run
 COPY . /app-run
